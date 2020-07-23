@@ -168,4 +168,4 @@ def storage_price_js():
     return "data = " + json.dumps(storage_price_data_json)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0", port=80)
