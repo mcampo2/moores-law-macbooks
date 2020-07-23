@@ -1,0 +1,23 @@
+{
+  "name": "scrape",
+  "version": "1.0.0",
+  "description": "Scrape everymac.com for MacBook details",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "author": "Michael Campo",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2",
+    "sequelize": "^5.21.12",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.18",
+    "@types/request": "^2.48.5",
+    "@types/sequelize": "^4.28.9",
+    "@types/sqlite3": "^3.1.6"
+  }
+}

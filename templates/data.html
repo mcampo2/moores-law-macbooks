@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Moore's Law for Apple</title>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/data.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand active" href="/index.html">
+                <img style="margin-right: 10px; margin-top: -10px;" src="/static/images/apple.svg"></span>
+                <span style="width: 200px"></span>Moore's Law for Apple
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span style="width: 100%"></span>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Plots</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/visualizations/memory.html">Memory</a>
+                            <a class="dropdown-item" href="/visualizations/storage.html">Storage</a>
+                            <a class="dropdown-item" href="/visualizations/memory_price.html">Price of Memory</a>
+                            <a class="dropdown-item" href="/visualizations/storage_price.html">Price of Storage</a>
+                        </div>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="/comparison.html">Comparison</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <main>
+            <div class="row justify-content-around">
+                <div class="card col-lg-11">
+                    <div class="card-body" style="display: grid; width: 100%">
+                        <h1>Data</h1>
+                        <hr>
+                        <div class="overflow-auto" id="table"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="panel-footer bg-dark">
+            <a style="display: contents" href="https://campo-computing.com/"><p></p><p>&copy; Copyright Campo Computing 2020</p></a>
+        </footer>
+        <script>
+            document.getElementById('table').innerHTML = data;
+            document.getElementsByTagName('table')[0].border = "0"
+            document.getElementsByTagName('table')[0].style = "display: block"
+            document.getElementsByTagName('table')[0].classList = "table table-striped overflow-auto"
+        </script>
+    </body>
+</html>
