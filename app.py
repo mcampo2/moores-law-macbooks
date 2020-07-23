@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import os
 import pandas as pd
 from flask import Flask, render_template
 from scipy.optimize import curve_fit
